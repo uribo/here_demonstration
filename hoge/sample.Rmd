@@ -1,0 +1,25 @@
+---
+title: "here demonstration"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+ここだよ！
+
+```{r}
+getwd()
+```
+
+```{r}
+head(read.csv("../data/iris.csv"))
+```
+
+```{r}
+head(read.csv(here::here("data", "iris.csv")))
+```
+
+
